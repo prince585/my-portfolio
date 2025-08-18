@@ -9,13 +9,25 @@
 </head>
 
 <body>
+    <!--navbar-->
+    <nav class="navbar">
+           <!-- <div class="logo"><a href="#myphoto"><img src="images/me.jpg"></a></div>-->
+            <a href="#about">ABOUT ME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#certificates">CERTIFICATES</a>
+            <a href="#contact">CONTACT ME</a>
+          
+    </nav>
     <!-- Hero Section -->
     <div id="myphoto">
         <div class="text">
             <h1>Prince Verma</h1>
             <strong>| JAVA | DSA | HTML, CSS |</strong>
             <h3>I’m a Computer Science student passionate about coding, problem-solving, and building impactful projects.</h3>
-            <button>DOWNLOAD MY RESUME</button>
+            <a href="https://drive.google.com/file/d/1mLWeM79aXSDc7u5g9xrds5TXohtnWclT/view?usp=drive_link"target="_blank" >
+            <button>DOWNLOAD MY RESUME</button></a>
         </div>
         <img src="images/me.jpg" alt="MY IMAGE">
     </div>
@@ -35,24 +47,48 @@
         <h1>SKILLS</h1>
         <div class="skill-cards">
             <div class="skill-item">
-                <img src="images/java-icon.jpg" alt="Java">
+                <img src="images/java.png" alt="Java">
                 <h4>Java</h4>
             </div>
+            <div class="skill-item">
+                <img src="images/cpro.png" alt="C">
+                 <h4>C</h4>
+             </div>
                  <div class="skill-item">
-                <img src="images/java-icon.jpg" alt="C++">
+                <img src="images/c-.png" alt="C++">
                  <h4>C++</h4>
              </div>
             <div class="skill-item">
-                <img src="images/java-icon.jpg" alt="HTML">
+                <img src="images/html-5.png" alt="HTML">
                 <h4>HTML</h4>
             </div>
             <div class="skill-item">
-                <img src="images/java-icon.jpg" alt="CSS">
+                <img src="images/css-3.png" alt="CSS">
                 <h4>CSS</h4>
         </div>
     </div>
+</section>
+    <section class="skills">
+        <h1>DEV TOOLS</h1>
+        <div class="skill-cards">
+            <div class="skill-item">
+                <img src="images/2025-07-14-ts3_thumbs-d25-p_256.webp" alt="kiro">
+                <h4>KIRO</h4>
+            </div>
+            <div class="skill-item">
+                <img src="images/github.png" alt="kiro">
+                <h4>GITHUB</h4>
+            </div>
+            <div class="skill-item">
+                <img src="images/vscode.png" alt="kiro">
+                <h4>VS CODE</h4>
+            </div>
+            <div class="skill-item">
+                <img src="images/canva-logo-400x400.png" alt="kiro">
+                <h4>CANVA</h4>
+            </div>
+        </div>
     </section>
-
     <!-- Experience Section -->
     <section id="experience">
         <h1>EXPERIENCE</h1>
@@ -67,44 +103,32 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section class="projects">
         <h1>PROJECTS</h1>
-        <div class="project-card">
-            <h2>GreenSankalp – Home Gardening Guide Website (2025)</h2>
-            <ul>
-                <li>Built a user-friendly website to guide beginners in home gardening.</li>
-                <li>Features included step-by-step plant tutorials, gardening benefits, and essential tips for soil, water, and sunlight.</li>
-                <li>Focused on clean, accessible design for first-time users.</li>
-                <li><strong>Tech Stack:</strong> HTML, CSS</li>
-                <li><strong>GitHub:</strong> 
-                    <a href="https://github.com/prince585/GreenSankalp.git" target="_blank">View Project</a>
-                </li>
-            </ul>
+    <div class="all-pro">
+        <div class="pro-num">
+          <img src="images/pirtfolio-img.jpeg" alt="To Do App Screenshot">
+          <h3>GREENSANKALP</h3>
+          <p>Home Gardening Guide Website (2025)</p>
+          <a href="https://github.com/prince585/GreenSankalp.git" target="_blank" class="btn">View Project</a>
         </div>
-    
-        <!-- Project 2 -->
-        <div class="project-card">
-            <h2>To-Do List App (Coming Soon)</h2>
-            <ul>
-                <li>A simple and interactive to-do list application to manage daily tasks.</li>
-                <li>Features: Add, edit, delete, and mark tasks as completed.</li>
-                <li>Focused on clean UI and smooth user experience.</li>
-                <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>GitHub:</strong> 
-                    <a href="https://github.com/prince585/todo-app" target="_blank">Coming Soon</a>
-                </li>
-            </ul>
+      
+        <div class="pro-num">
+          <img src="images/pirtfolio-img.jpeg" alt="Portfolio Screenshot">
+          <h3>Portfolio</h3>
+          <p>Showcase of my projects.</p>
+          <a href="https://github.com/prince585/my-portfolio.git" target="_blank" class="btn">View Project</a>
         </div>
-        <div class="project-card">
-            <h2>Portfolio Website</h2>
-            <ul>
-              <li>A personal website showcasing my skills, education, and projects.</li>
-              <li>Focused on responsive design and clean UI.</li>
-              <li><strong>Tech Stack:</strong> HTML, CSS</li>
-              <li><strong>GitHub:</strong> <a href="#">View Project</a></li>
-            </ul>
-          </div>
-    </section>
+      
+        <div class="pro-num">
+          <img src="images/pirtfolio-img.jpeg" alt="Green Socket Project Screenshot">
+          <h3>Green Socket</h3>
+          <small>Krehl</small>
+          <p>Details about this project.</p>
+          <a href="https://github.com/yourusername/greensocket" target="_blank" class="btn">View Project</a>
+        </div>
+    </div>
+      </section>
         <!-- Education Section -->
         <section id="education">
             <h1>EDUCATION</h1>
@@ -129,26 +153,30 @@
             </div>
         </section>
             <!-- Certificates Section -->
-    <section id="certificates">
-        <h1>CERTIFICATES & ACHIEVEMENTS</h1>
-
-        <div class="cert-item">
-            <h2>Projection Training and Placement Program (2025)</h2>
-            <p>Completed training in C++, OOP concepts, communication skills, resume building, mock interviews, and computer science fundamentals.</p>
-        </div>
-
-        <div class="cert-item">
-            <h2>Java Basics – Online Course</h2>
-            <p>Strengthened core Java concepts including syntax, loops, arrays, and OOP principles.</p>
-        </div>
-
-        <div class="cert-item">
-            <h2>HTML & CSS Workshop</h2>
-            <p>Hands-on training in building responsive static websites using HTML and CSS.</p>
-        </div>
-    </section>
-        <!-- Contact Section -->
-        <section id="contact">
+            <section id="certificates">
+                <h2>Certifications & Achievements</h2>
+            <div class="all-cert">
+                  <div class="cert-card">
+                    <a href=""target="_blank"><img src="images/pirtfolio-img.jpeg" alt="Certificate 1"></a>
+                    <h3>Projection Training & Placement Program</h3>
+                    <p>Focused on C++, OOP, communication, and interview prep (2025)</p>
+                  </div>
+              
+                 <div class="cert-card">
+                    <a href="https://drive.google.com/file/d/1D-UUIFmI49O16L5pnKJVkG2bDIf7MlB9/view?usp=sharing"target="_blank"><img src="images/cert-2.jpg" alt="HTML & CSS Bootcamp Certificate"></a>
+                    <h3>HTML & CSS Bootcamp</h3>
+                    <p>Completed LetsUpgrade, focusing a bootcamp with on HTML & CSS basics.</p>
+                  </div>
+              
+                  <div class="cert-card">
+                    <a href=""target="_blank"><img src="images/pirtfolio-img.jpeg" alt="Certificate 1"></a>
+                    <h3>Java & DSA Practice</h3>
+                    <p>Completed multiple coding challenges and mini-projects</p>
+                  </div>
+            </div>
+              </section>
+       <!-- Contact Section -->
+      <section id="contact">
             <h1>CONTACT ME</h1>
             <p>If you’d like to get in touch, feel free to reach out through any of the following:</p>
     
@@ -158,8 +186,7 @@
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prince-verma-b7a2b12b0/" target="_blank">linkedin.com/in/prince-verma</a></li>
                 <li><strong>GitHub:</strong> <a href="https://github.com/prince585" target="_blank">github.com/prince585</a></li>
             </ul>
-        </section>
-            <!-- Footer Section -->
+        </section> 
     <footer>
         <p>© 2025 Prince Verma. All Rights Reserved.</p>
         <p>
