@@ -308,14 +308,16 @@ body {
 }
 @media (max-width: 768px) {
   .navbar {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 8px;
+    display: block;             /* make it behave like a scrollable row */
+    overflow-x: auto;           /* enable horizontal scroll */
+    white-space: nowrap;        /* keep items in one line */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
   }
 
   .navbar a {
-    display: inline-block;
-    font-size: 14px;
-    padding: 8px;
+    display: inline-block;      /* make each link inline for scrolling */
+    font-size: 14px;            /* slightly smaller text */
+    padding: 10px;              /* add space so tapping is easier */
   }
 }
+
