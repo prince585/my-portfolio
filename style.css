@@ -306,3 +306,16 @@ body {
     padding: 10px;
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 8px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
