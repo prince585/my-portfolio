@@ -12,10 +12,11 @@ body, p, a, li, span, button , h3 {
   line-height: 1.6;
 }
 h1, h4 {
-  font-family: 'Mozilla Headline', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 h1 {
-  font-family: 'Mozilla Headline', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: none;
   letter-spacing: 1px;
@@ -142,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   html {
     scroll-behavior: smooth;
   }
-  .navbar {
+  /*.navbar {
     display: flex;
     justify-content: right;
     align-items: right;
@@ -153,7 +154,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5%;
     margin-top: 30px;
    
+  }*/
+  .navbar {
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    padding: 12px 20px;
+    margin-right: 5%;
+    margin-top: 30px;
+    position: sticky;   /* <-- this makes it stay fixed */
+    top: 0;             /* <-- stick at very top */
+    z-index: 1000;      /* always on top of content */
+   
   }
+  
   .navbar a {
     color: #c5c5c7;
     text-decoration: none;
@@ -232,4 +246,63 @@ h1, h2, h3, h4, h5, h6 {
   .pro-num:hover, .cert-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+body{
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+line-height: 1.6;
+}
+body {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+#myphoto img {
+  transition: transform 0.4s ease;
+}
+
+#myphoto img:hover {
+  transform: scale(1.05);
+}
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex div {
+    width: 90%;  /* make cards take more space */
+    margin-bottom: 20px;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
 }
