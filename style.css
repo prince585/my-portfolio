@@ -1,4 +1,33 @@
+body{
+  background: url("images/backgroundimg.jpg") 
+  no-repeat center center fixed;
+background-size: cover; 
+color: white;
 
+}
+body, p, a, li, span, button , h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #f0f0f0; /* light gray for readability on dark bg */
+  line-height: 1.6;
+}
+h1, h4 {
+  font-family: 'Mozilla Headline', Arial, sans-serif;
+}
+h1 {
+  font-family: 'Mozilla Headline', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 2rem;   /* Main name heading */
+}
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
 
 #myphoto{
     display: flex;
@@ -17,11 +46,17 @@
 }
 #myphoto button{
     border: none;
-    background-color: blue;
+    background-color: rgb(79, 67, 185);
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+#myphoto button:hover {
+  background-color: rgb(59, 47, 165);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(79, 67, 185, 0.4);
 }
 #about{
     padding: 40px 10%;
@@ -45,12 +80,12 @@
     border-radius: 30%;
     display: block;
 }
-.experience-card {
+.experience-card , .edu-item {
     margin-top: 20%;
     border: 1px solid black;
     padding: 20px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+   /* background-color: #f9f9f9;*/
     position: relative;
     margin: 20px auto;
     max-width: 700px;
@@ -58,11 +93,11 @@
   
     border-left: 4px solid #007BFF; 
 }
-#experience{
+#experience {
     text-align: center;
     padding: 40px 0;
 }
-.projects{
+#projects{
     text-align: center;
     padding: 40px 0;
 }
@@ -104,17 +139,6 @@
     text-align: center;
     position: relative;
   }     
-  .edu-item {
-    margin-top: 20%;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    position: relative;
-    margin: 20px auto;
-    max-width: 700px;
-    text-align: left;
-  }
   html {
     scroll-behavior: smooth;
   }
@@ -131,7 +155,7 @@
    
   }
   .navbar a {
-    color: #000000;
+    color: #c5c5c7;
     text-decoration: none;
     font-weight: 500;
     font-size: large;
@@ -154,11 +178,12 @@
     gap: 40px;
   }
   .cert-card {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 6px;
     padding: 10px;
     max-width: 250px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .cert-card img {
@@ -195,4 +220,16 @@
   footer a:hover {
     text-decoration: underline;
   }
-  
+  .skill-item{
+   transition: all ease 0.5s;
+  }
+  .skill-item:hover{
+    transform: scale(1.5);
+  }
+  .pro-num  {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pro-num:hover, .cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
